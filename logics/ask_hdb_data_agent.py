@@ -1,21 +1,24 @@
-  
+ 
 from langchain.agents import Tool
 from langchain.agents.agent_types import AgentType
 from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent
-
 from langchain_openai import ChatOpenAI
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
 from dotenv import load_dotenv
+import streamlit as st
+
+if load_dotenv('.env'):
+    # for local development
+    OPENAI_KEY = os.getenv('OPENAI_API_KEY')
+else:
+    # for production to STreamlit, grab key from the Secrets in Streamlit Community Cloud App Advanced Settings
+    OPENAI_KEY = st.secrets['OPENAI_API_KEY']
 
 
-# Load environment variables from .env file
-load_dotenv()
-
-# Get the OpenAI API key
-openai_api_key = os.getenv("OPENAI_API_KEY")
-
+# Initialize the ChatOpenAI with the API key
+llm = ChatOpenAI(api_key=OPENAI_KEY, temperature=0, model='gpt-4o-mini')
 
 
 # Read in resale data file
