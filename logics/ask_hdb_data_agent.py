@@ -6,7 +6,18 @@ from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe
 from langchain_openai import ChatOpenAI
 import pandas as pd
 import matplotlib.pyplot as plt
-  
+import os
+from dotenv import load_dotenv
+
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Get the OpenAI API key
+openai_api_key = os.getenv("OPENAI_API_KEY")
+
+
+
 # Read in resale data file
 df = pd.read_csv("./data/hdb_2024.csv")
 # Convert to datetime
