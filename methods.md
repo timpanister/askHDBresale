@@ -1,4 +1,4 @@
-# Methods
+<!-- # Methods
 
 This is to document the steps i used to create the streamlit project.
 
@@ -68,4 +68,16 @@ This is to document the steps i used to create the streamlit project.
 15. I also experimented with lots of Bing Copilot to come up with the code for the UI/UX I want to achieve. For example, the radio button style sidebar look and configure the buttons to navigate to the appropriate page. Basically i use lazy chat.
 
 
+ -->
+# Methodology
 
+Created: Oct 2024
+
+<img src="data/flowchart.png" alt="Flow chart" />
+
+
+## Github repository
+[Link to the Github repository](https://github.com/timpanister/askHDBresale)
+
+## Contact
+jenny_tan@np.edu.sg
