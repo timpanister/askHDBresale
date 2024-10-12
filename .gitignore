@@ -22,3 +22,6 @@ dist/
 
 # Streamlit
 .streamlit/secrets.toml
+
+methods.py
+requirements manual.txt
