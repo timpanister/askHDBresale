@@ -1,0 +1,11 @@
+streamlit
+pandas
+matplotlib
+openai
+python-dotenv
+pydeck
+langchain
+langchain-openai
+langchain_experimental
+crewai
+crewai-tools
