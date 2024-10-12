@@ -116,7 +116,6 @@ python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
 pytube==15.0.0
 pytz==2024.2
-pywin32==307
 pywin32-ctypes==0.2.3
 PyYAML==6.0.2
 rank-bm25==0.2.2
