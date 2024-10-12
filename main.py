@@ -118,9 +118,11 @@ if page == "Home":
 
 # Methods page content
 elif page == "Methods":
-    with open('methods.md', 'r') as file:
-        methods_content = file.read()
-    st.markdown(methods_content)
+    try:
+        with open('methods.py', 'r') as f:
+            exec(f.read())
+    except FileNotFoundError:
+        st.error("The file 'Methods.py' was not found. Please check the file path and try again.")  
     
 
 # View All Flats page content
