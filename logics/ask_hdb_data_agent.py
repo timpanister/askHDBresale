@@ -30,6 +30,8 @@ df['transaction_date'] = pd.to_datetime(df['tranc_year_month'])
 
 llm = ChatOpenAI(temperature=0, model='gpt-4o-mini')
 
+
+
 pandas_tool_agent = create_pandas_dataframe_agent(
 	llm=llm,
 	df=df,

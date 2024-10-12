@@ -35,7 +35,7 @@ if not check_password():
     
 # Sidebar navigation
 page = st.sidebar.radio("SELECT A PAGE", 
-                            ["Home", "View All Flats", "Methods", "About This App"])
+                            ["Home", "Transactions Map", "Methods", "About This App"])
 
 # Home page content
 if page == "Home":
@@ -124,12 +124,12 @@ elif page == "Methods":
     
 
 # View All Flats page content
-elif page == "View All Flats":
+elif page == "Transactions Map":
     try:
-        with open('2_View_All_Flats.py', "r") as f:
+        with open('2_Map_Transactions.py', "r") as f:
             exec(f.read())
     except FileNotFoundError:
-        st.error("The file '2_View_All_Flats.py' was not found. Please check the file path and try again.")        
+        st.error("The file '2_Map_Transactions.py' was not found. Please check the file path and try again.")        
        
 # About This App page content
 elif page == "About This App":
