@@ -26,7 +26,7 @@ This interactive web application is designed to help you explore and analyze HDB
 
 **<span style="color: yellow;">Ask Questions:</span>**: Simply type in your questions about the data, and our app will provide you with insightful answers. For example, you can ask, “What is the median price for flats in Clementi?” and get an accurate response based on the latest data.
 
-**<span style="color: yellow;">Data Analysis and Visualization:</span>** Our app not only answers your questions but also offers data analysis and visualization tools to help you understand trends and patterns in the HDB resale market.
+# **<span style="color: yellow;">Data Analysis and Visualization:</span>** Our app not only answers your questions but also offers data analysis and visualization tools to help you understand trends and patterns in the HDB resale market.
 
 Whether you’re a homebuyer, homeseller, a property analyst, or just curious about the HDB resale market, our app is here to provide you with the information you need in a user-friendly and interactive way.
 
